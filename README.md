@@ -25,6 +25,18 @@ Optimizing Air Travel models flight-delay risk as a predictive analytics problem
 
 The repository contains a single primary notebook that captures the workflow from data preparation to model evaluation. The README gives reviewers a concise map of the project and execution path.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  FlightData["Flight and Weather Signals"] --> Notebook["Delay Prediction Notebook"]
+  Notebook --> Clean["Data Preparation"]
+  Clean --> Features["Feature Engineering"]
+  Features --> Model["Delay Prediction Model"]
+  Model --> Metrics["Evaluation Metrics"]
+  Metrics --> Planning["Operational Planning Insights"]
+```
+
 ## Technology Stack
 
 - Python notebook workflow.
